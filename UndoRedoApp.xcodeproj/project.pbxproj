@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2730EB7D26DE80B5000FABBB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB7C26DE80B5000FABBB /* Tests_iOS.swift */; };
+		2730EB8826DE80B5000FABBB /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB8726DE80B5000FABBB /* Tests_macOS.swift */; };
+		2730EB8A26DE80B5000FABBB /* UndoRedoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB6126DE80B4000FABBB /* UndoRedoAppApp.swift */; };
+		2730EB8B26DE80B5000FABBB /* UndoRedoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB6126DE80B4000FABBB /* UndoRedoAppApp.swift */; };
+		2730EB8C26DE80B5000FABBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB6226DE80B4000FABBB /* ContentView.swift */; };
+		2730EB8D26DE80B5000FABBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB6226DE80B4000FABBB /* ContentView.swift */; };
+		2730EB8E26DE80B5000FABBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2730EB6326DE80B5000FABBB /* Assets.xcassets */; };
+		2730EB8F26DE80B5000FABBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2730EB6326DE80B5000FABBB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2730EB7926DE80B5000FABBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2730EB5C26DE80B3000FABBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2730EB6726DE80B5000FABBB;
+			remoteInfo = "UndoRedoApp (iOS)";
+		};
+		2730EB8426DE80B5000FABBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2730EB5C26DE80B3000FABBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2730EB6F26DE80B5000FABBB;
+			remoteInfo = "UndoRedoApp (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2730EB6126DE80B4000FABBB /* UndoRedoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoRedoAppApp.swift; sourceTree = "<group>"; };
+		2730EB6226DE80B4000FABBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2730EB6326DE80B5000FABBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2730EB6826DE80B5000FABBB /* UndoRedoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UndoRedoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2730EB6B26DE80B5000FABBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2730EB7026DE80B5000FABBB /* UndoRedoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UndoRedoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2730EB7226DE80B5000FABBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2730EB7326DE80B5000FABBB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		2730EB7826DE80B5000FABBB /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2730EB7C26DE80B5000FABBB /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		2730EB7E26DE80B5000FABBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2730EB8326DE80B5000FABBB /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2730EB8726DE80B5000FABBB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		2730EB8926DE80B5000FABBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2730EB6526DE80B5000FABBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2730EB6D26DE80B5000FABBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2730EB7526DE80B5000FABBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2730EB8026DE80B5000FABBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2730EB5B26DE80B3000FABBB = {
+			isa = PBXGroup;
+			children = (
+				2730EB6026DE80B3000FABBB /* Shared */,
+				2730EB6A26DE80B5000FABBB /* iOS */,
+				2730EB7126DE80B5000FABBB /* macOS */,
+				2730EB7B26DE80B5000FABBB /* Tests iOS */,
+				2730EB8626DE80B5000FABBB /* Tests macOS */,
+				2730EB6926DE80B5000FABBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2730EB6026DE80B3000FABBB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2730EB6126DE80B4000FABBB /* UndoRedoAppApp.swift */,
+				2730EB6226DE80B4000FABBB /* ContentView.swift */,
+				2730EB6326DE80B5000FABBB /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2730EB6926DE80B5000FABBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2730EB6826DE80B5000FABBB /* UndoRedoApp.app */,
+				2730EB7026DE80B5000FABBB /* UndoRedoApp.app */,
+				2730EB7826DE80B5000FABBB /* Tests iOS.xctest */,
+				2730EB8326DE80B5000FABBB /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2730EB6A26DE80B5000FABBB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2730EB6B26DE80B5000FABBB /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		2730EB7126DE80B5000FABBB /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				2730EB7226DE80B5000FABBB /* Info.plist */,
+				2730EB7326DE80B5000FABBB /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		2730EB7B26DE80B5000FABBB /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2730EB7C26DE80B5000FABBB /* Tests_iOS.swift */,
+				2730EB7E26DE80B5000FABBB /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		2730EB8626DE80B5000FABBB /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				2730EB8726DE80B5000FABBB /* Tests_macOS.swift */,
+				2730EB8926DE80B5000FABBB /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2730EB6726DE80B5000FABBB /* UndoRedoApp (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2730EB9226DE80B5000FABBB /* Build configuration list for PBXNativeTarget "UndoRedoApp (iOS)" */;
+			buildPhases = (
+				2730EB6426DE80B5000FABBB /* Sources */,
+				2730EB6526DE80B5000FABBB /* Frameworks */,
+				2730EB6626DE80B5000FABBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UndoRedoApp (iOS)";
+			productName = "UndoRedoApp (iOS)";
+			productReference = 2730EB6826DE80B5000FABBB /* UndoRedoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2730EB6F26DE80B5000FABBB /* UndoRedoApp (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2730EB9526DE80B5000FABBB /* Build configuration list for PBXNativeTarget "UndoRedoApp (macOS)" */;
+			buildPhases = (
+				2730EB6C26DE80B5000FABBB /* Sources */,
+				2730EB6D26DE80B5000FABBB /* Frameworks */,
+				2730EB6E26DE80B5000FABBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UndoRedoApp (macOS)";
+			productName = "UndoRedoApp (macOS)";
+			productReference = 2730EB7026DE80B5000FABBB /* UndoRedoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2730EB7726DE80B5000FABBB /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2730EB9826DE80B5000FABBB /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				2730EB7426DE80B5000FABBB /* Sources */,
+				2730EB7526DE80B5000FABBB /* Frameworks */,
+				2730EB7626DE80B5000FABBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2730EB7A26DE80B5000FABBB /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 2730EB7826DE80B5000FABBB /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2730EB8226DE80B5000FABBB /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2730EB9B26DE80B5000FABBB /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				2730EB7F26DE80B5000FABBB /* Sources */,
+				2730EB8026DE80B5000FABBB /* Frameworks */,
+				2730EB8126DE80B5000FABBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2730EB8526DE80B5000FABBB /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 2730EB8326DE80B5000FABBB /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2730EB5C26DE80B3000FABBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					2730EB6726DE80B5000FABBB = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					2730EB6F26DE80B5000FABBB = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					2730EB7726DE80B5000FABBB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 2730EB6726DE80B5000FABBB;
+					};
+					2730EB8226DE80B5000FABBB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 2730EB6F26DE80B5000FABBB;
+					};
+				};
+			};
+			buildConfigurationList = 2730EB5F26DE80B3000FABBB /* Build configuration list for PBXProject "UndoRedoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2730EB5B26DE80B3000FABBB;
+			productRefGroup = 2730EB6926DE80B5000FABBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2730EB6726DE80B5000FABBB /* UndoRedoApp (iOS) */,
+				2730EB6F26DE80B5000FABBB /* UndoRedoApp (macOS) */,
+				2730EB7726DE80B5000FABBB /* Tests iOS */,
+				2730EB8226DE80B5000FABBB /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2730EB6626DE80B5000FABBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2730EB8E26DE80B5000FABBB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2730EB6E26DE80B5000FABBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2730EB8F26DE80B5000FABBB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2730EB7626DE80B5000FABBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2730EB8126DE80B5000FABBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2730EB6426DE80B5000FABBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2730EB8C26DE80B5000FABBB /* ContentView.swift in Sources */,
+				2730EB8A26DE80B5000FABBB /* UndoRedoAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2730EB6C26DE80B5000FABBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2730EB8D26DE80B5000FABBB /* ContentView.swift in Sources */,
+				2730EB8B26DE80B5000FABBB /* UndoRedoAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2730EB7426DE80B5000FABBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2730EB7D26DE80B5000FABBB /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2730EB7F26DE80B5000FABBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2730EB8826DE80B5000FABBB /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2730EB7A26DE80B5000FABBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2730EB6726DE80B5000FABBB /* UndoRedoApp (iOS) */;
+			targetProxy = 2730EB7926DE80B5000FABBB /* PBXContainerItemProxy */;
+		};
+		2730EB8526DE80B5000FABBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2730EB6F26DE80B5000FABBB /* UndoRedoApp (macOS) */;
+			targetProxy = 2730EB8426DE80B5000FABBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2730EB9026DE80B5000FABBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2730EB9126DE80B5000FABBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2730EB9326DE80B5000FABBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MQ22R4S7T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.gerasymenko.UndoRedoApp;
+				PRODUCT_NAME = UndoRedoApp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2730EB9426DE80B5000FABBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MQ22R4S7T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.gerasymenko.UndoRedoApp;
+				PRODUCT_NAME = UndoRedoApp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2730EB9626DE80B5000FABBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5MQ22R4S7T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.gerasymenko.UndoRedoApp;
+				PRODUCT_NAME = UndoRedoApp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2730EB9726DE80B5000FABBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5MQ22R4S7T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.gerasymenko.UndoRedoApp;
+				PRODUCT_NAME = UndoRedoApp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2730EB9926DE80B5000FABBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MQ22R4S7T;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gerasymenko.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UndoRedoApp (iOS)";
+			};
+			name = Debug;
+		};
+		2730EB9A26DE80B5000FABBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MQ22R4S7T;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gerasymenko.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UndoRedoApp (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2730EB9C26DE80B5000FABBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5MQ22R4S7T;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gerasymenko.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "UndoRedoApp (macOS)";
+			};
+			name = Debug;
+		};
+		2730EB9D26DE80B5000FABBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5MQ22R4S7T;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gerasymenko.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "UndoRedoApp (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2730EB5F26DE80B3000FABBB /* Build configuration list for PBXProject "UndoRedoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2730EB9026DE80B5000FABBB /* Debug */,
+				2730EB9126DE80B5000FABBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2730EB9226DE80B5000FABBB /* Build configuration list for PBXNativeTarget "UndoRedoApp (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2730EB9326DE80B5000FABBB /* Debug */,
+				2730EB9426DE80B5000FABBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2730EB9526DE80B5000FABBB /* Build configuration list for PBXNativeTarget "UndoRedoApp (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2730EB9626DE80B5000FABBB /* Debug */,
+				2730EB9726DE80B5000FABBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2730EB9826DE80B5000FABBB /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2730EB9926DE80B5000FABBB /* Debug */,
+				2730EB9A26DE80B5000FABBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2730EB9B26DE80B5000FABBB /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2730EB9C26DE80B5000FABBB /* Debug */,
+				2730EB9D26DE80B5000FABBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2730EB5C26DE80B3000FABBB /* Project object */;
+}
