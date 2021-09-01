@@ -71,8 +71,7 @@ public class CommandManager<Content: Equatable>: CommandManagerType {
     
     public var canUndo: Bool {
         
-        guard self.position > 1
-              , let _ = self.currentValue else {
+        guard self.position > 0 else {
 
             return false
         }
@@ -81,8 +80,7 @@ public class CommandManager<Content: Equatable>: CommandManagerType {
     
     @discardableResult public func undo() -> Bool {
         
-        guard self.canUndo
-              , let currentValue = self.currentValue else {
+        guard self.canUndo else {
             return false
         }
         
@@ -102,8 +100,7 @@ public class CommandManager<Content: Equatable>: CommandManagerType {
     public var canRedo: Bool {
         
         guard position != depth
-              , self.commands.count > position
-              , let _ = self.currentValue else {
+              , self.commands.count > position else {
             
             return false
         }
@@ -113,8 +110,7 @@ public class CommandManager<Content: Equatable>: CommandManagerType {
     
     @discardableResult public func redo() -> Bool {
         
-        guard self.canRedo
-              , let currentValue = self.currentValue else {
+        guard self.canRedo else {
             return false
         }
         
@@ -152,23 +148,28 @@ public class CommandManager<Content: Equatable>: CommandManagerType {
     private var cancellables: [AnyCancellable] = []
     private var subscriptions: [(Content) -> ()] = []
     
-    private var lastValue: Content? = nil
-    private var currentValue: Content? = nil
+    private var lastValue: Content
+    private var currentValue: Content
     
-    public init<P: Publisher>(publisher: P) where P.Output == Content {
+    public init<P: Publisher>(publisher: P
+                              , initialValue: P.Output
+                              , debounceFor time: RunLoop.SchedulerTimeType.Stride = 1) where P.Output == Content {
         
-        cancellables.append(publisher.sink { completion in
+        self.lastValue = initialValue
+        self.currentValue = initialValue
+        
+        self.cancellables.append(publisher.sink { completion in
             
         } receiveValue: { [weak self] value in
             
             self?.currentValue = value
         })
         
-        cancellables.append(publisher
-            .debounce(for: 1, scheduler: RunLoop.main)
+        self.cancellables.append(publisher
+            .debounce(for: time, scheduler: RunLoop.main)
             .receive(on: DispatchQueue.main)
             .sink(
-                receiveCompletion: { completion in
+                receiveCompletion: { _ in
                     
                 }, receiveValue: { [weak self] value in
                     

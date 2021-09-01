@@ -14,7 +14,7 @@ class ContentViewModel: ObservableObject {
     @Published var commandManager: CommandManager<String>!
     
     init() {
-        commandManager = CommandManager(publisher: $text)
+        commandManager = CommandManager(publisher: $text, initialValue: text)
     }
 }
 

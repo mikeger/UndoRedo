@@ -295,7 +295,6 @@
 					};
 					27B2978B26DF6F730010DFF7 = {
 						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 2730EB6F26DE80B5000FABBB;
 					};
 					27B2979A26DF6FA60010DFF7 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -622,7 +621,6 @@
 		27B2979426DF6F730010DFF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5MQ22R4S7T;
@@ -637,14 +635,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UndoRedoApp.app/Contents/MacOS/UndoRedoApp";
 			};
 			name = Debug;
 		};
 		27B2979526DF6F730010DFF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5MQ22R4S7T;
@@ -659,7 +655,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UndoRedoApp.app/Contents/MacOS/UndoRedoApp";
 			};
 			name = Release;
 		};
