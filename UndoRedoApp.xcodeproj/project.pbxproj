@@ -7,35 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2730EB7D26DE80B5000FABBB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB7C26DE80B5000FABBB /* Tests_iOS.swift */; };
-		2730EB8826DE80B5000FABBB /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB8726DE80B5000FABBB /* Tests_macOS.swift */; };
-		2730EB8A26DE80B5000FABBB /* UndoRedoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB6126DE80B4000FABBB /* UndoRedoAppApp.swift */; };
-		2730EB8B26DE80B5000FABBB /* UndoRedoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB6126DE80B4000FABBB /* UndoRedoAppApp.swift */; };
+		2730EB8A26DE80B5000FABBB /* UndoRedoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB6126DE80B4000FABBB /* UndoRedoApp.swift */; };
+		2730EB8B26DE80B5000FABBB /* UndoRedoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB6126DE80B4000FABBB /* UndoRedoApp.swift */; };
 		2730EB8C26DE80B5000FABBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB6226DE80B4000FABBB /* ContentView.swift */; };
 		2730EB8D26DE80B5000FABBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB6226DE80B4000FABBB /* ContentView.swift */; };
 		2730EB8E26DE80B5000FABBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2730EB6326DE80B5000FABBB /* Assets.xcassets */; };
 		2730EB8F26DE80B5000FABBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2730EB6326DE80B5000FABBB /* Assets.xcassets */; };
+		27B2978F26DF6F730010DFF7 /* CommandManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2978E26DF6F730010DFF7 /* CommandManagerTests.swift */; };
+		27B2979F26DF6FA60010DFF7 /* CommandManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B2979D26DF6FA60010DFF7 /* CommandManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27B297A226DF6FA60010DFF7 /* CommandManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B2979B26DF6FA60010DFF7 /* CommandManager.framework */; };
+		27B297A326DF6FA60010DFF7 /* CommandManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27B2979B26DF6FA60010DFF7 /* CommandManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27B297A826DF6FB00010DFF7 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EB9E26DE84A7000FABBB /* Command.swift */; };
+		27B297A926DF6FB00010DFF7 /* CommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2730EBA126DE84B8000FABBB /* CommandManager.swift */; };
+		27B297AD26DF705C0010DFF7 /* CommandManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B2979B26DF6FA60010DFF7 /* CommandManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2730EB7926DE80B5000FABBB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2730EB5C26DE80B3000FABBB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2730EB6726DE80B5000FABBB;
-			remoteInfo = "UndoRedoApp (iOS)";
-		};
-		2730EB8426DE80B5000FABBB /* PBXContainerItemProxy */ = {
+		27B2979126DF6F730010DFF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2730EB5C26DE80B3000FABBB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2730EB6F26DE80B5000FABBB;
 			remoteInfo = "UndoRedoApp (macOS)";
 		};
+		27B297A026DF6FA60010DFF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2730EB5C26DE80B3000FABBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B2979A26DF6FA60010DFF7;
+			remoteInfo = CommandManager;
+		};
+		27B297AA26DF70580010DFF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2730EB5C26DE80B3000FABBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B2979A26DF6FA60010DFF7;
+			remoteInfo = CommandManager;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		27B297A726DF6FA60010DFF7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27B297A326DF6FA60010DFF7 /* CommandManager.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2730EB6126DE80B4000FABBB /* UndoRedoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoRedoAppApp.swift; sourceTree = "<group>"; };
+		2730EB6126DE80B4000FABBB /* UndoRedoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoRedoApp.swift; sourceTree = "<group>"; };
 		2730EB6226DE80B4000FABBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2730EB6326DE80B5000FABBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2730EB6826DE80B5000FABBB /* UndoRedoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UndoRedoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,12 +69,14 @@
 		2730EB7026DE80B5000FABBB /* UndoRedoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UndoRedoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2730EB7226DE80B5000FABBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2730EB7326DE80B5000FABBB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		2730EB7826DE80B5000FABBB /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2730EB7C26DE80B5000FABBB /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		2730EB7E26DE80B5000FABBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2730EB8326DE80B5000FABBB /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2730EB8726DE80B5000FABBB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		2730EB8926DE80B5000FABBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2730EB9E26DE84A7000FABBB /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		2730EBA126DE84B8000FABBB /* CommandManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandManager.swift; sourceTree = "<group>"; };
+		27B2978C26DF6F730010DFF7 /* CommandManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B2978E26DF6F730010DFF7 /* CommandManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandManagerTests.swift; sourceTree = "<group>"; };
+		27B2979026DF6F730010DFF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B2979B26DF6FA60010DFF7 /* CommandManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommandManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B2979D26DF6FA60010DFF7 /* CommandManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandManager.h; sourceTree = "<group>"; };
+		27B2979E26DF6FA60010DFF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B297A226DF6FA60010DFF7 /* CommandManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,17 +92,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B297AD26DF705C0010DFF7 /* CommandManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2730EB7526DE80B5000FABBB /* Frameworks */ = {
+		27B2978926DF6F730010DFF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2730EB8026DE80B5000FABBB /* Frameworks */ = {
+		27B2979826DF6FA60010DFF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,18 +117,19 @@
 			isa = PBXGroup;
 			children = (
 				2730EB6026DE80B3000FABBB /* Shared */,
+				27B2979C26DF6FA60010DFF7 /* CommandManager */,
 				2730EB6A26DE80B5000FABBB /* iOS */,
 				2730EB7126DE80B5000FABBB /* macOS */,
-				2730EB7B26DE80B5000FABBB /* Tests iOS */,
-				2730EB8626DE80B5000FABBB /* Tests macOS */,
+				27B2978D26DF6F730010DFF7 /* CommandManagerTests */,
 				2730EB6926DE80B5000FABBB /* Products */,
+				27B297AC26DF705C0010DFF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		2730EB6026DE80B3000FABBB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				2730EB6126DE80B4000FABBB /* UndoRedoAppApp.swift */,
+				2730EB6126DE80B4000FABBB /* UndoRedoApp.swift */,
 				2730EB6226DE80B4000FABBB /* ContentView.swift */,
 				2730EB6326DE80B5000FABBB /* Assets.xcassets */,
 			);
@@ -110,8 +141,8 @@
 			children = (
 				2730EB6826DE80B5000FABBB /* UndoRedoApp.app */,
 				2730EB7026DE80B5000FABBB /* UndoRedoApp.app */,
-				2730EB7826DE80B5000FABBB /* Tests iOS.xctest */,
-				2730EB8326DE80B5000FABBB /* Tests macOS.xctest */,
+				27B2978C26DF6F730010DFF7 /* CommandManagerTests.xctest */,
+				27B2979B26DF6FA60010DFF7 /* CommandManager.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,25 +164,45 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		2730EB7B26DE80B5000FABBB /* Tests iOS */ = {
+		27B2978D26DF6F730010DFF7 /* CommandManagerTests */ = {
 			isa = PBXGroup;
 			children = (
-				2730EB7C26DE80B5000FABBB /* Tests_iOS.swift */,
-				2730EB7E26DE80B5000FABBB /* Info.plist */,
+				27B2978E26DF6F730010DFF7 /* CommandManagerTests.swift */,
+				27B2979026DF6F730010DFF7 /* Info.plist */,
 			);
-			path = "Tests iOS";
+			path = CommandManagerTests;
 			sourceTree = "<group>";
 		};
-		2730EB8626DE80B5000FABBB /* Tests macOS */ = {
+		27B2979C26DF6FA60010DFF7 /* CommandManager */ = {
 			isa = PBXGroup;
 			children = (
-				2730EB8726DE80B5000FABBB /* Tests_macOS.swift */,
-				2730EB8926DE80B5000FABBB /* Info.plist */,
+				2730EB9E26DE84A7000FABBB /* Command.swift */,
+				2730EBA126DE84B8000FABBB /* CommandManager.swift */,
+				27B2979D26DF6FA60010DFF7 /* CommandManager.h */,
+				27B2979E26DF6FA60010DFF7 /* Info.plist */,
 			);
-			path = "Tests macOS";
+			path = CommandManager;
+			sourceTree = "<group>";
+		};
+		27B297AC26DF705C0010DFF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		27B2979626DF6FA60010DFF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B2979F26DF6FA60010DFF7 /* CommandManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		2730EB6726DE80B5000FABBB /* UndoRedoApp (iOS) */ = {
@@ -161,10 +212,12 @@
 				2730EB6426DE80B5000FABBB /* Sources */,
 				2730EB6526DE80B5000FABBB /* Frameworks */,
 				2730EB6626DE80B5000FABBB /* Resources */,
+				27B297A726DF6FA60010DFF7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				27B297A126DF6FA60010DFF7 /* PBXTargetDependency */,
 			);
 			name = "UndoRedoApp (iOS)";
 			productName = "UndoRedoApp (iOS)";
@@ -182,47 +235,48 @@
 			buildRules = (
 			);
 			dependencies = (
+				27B297AB26DF70580010DFF7 /* PBXTargetDependency */,
 			);
 			name = "UndoRedoApp (macOS)";
 			productName = "UndoRedoApp (macOS)";
 			productReference = 2730EB7026DE80B5000FABBB /* UndoRedoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2730EB7726DE80B5000FABBB /* Tests iOS */ = {
+		27B2978B26DF6F730010DFF7 /* CommandManagerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2730EB9826DE80B5000FABBB /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildConfigurationList = 27B2979326DF6F730010DFF7 /* Build configuration list for PBXNativeTarget "CommandManagerTests" */;
 			buildPhases = (
-				2730EB7426DE80B5000FABBB /* Sources */,
-				2730EB7526DE80B5000FABBB /* Frameworks */,
-				2730EB7626DE80B5000FABBB /* Resources */,
+				27B2978826DF6F730010DFF7 /* Sources */,
+				27B2978926DF6F730010DFF7 /* Frameworks */,
+				27B2978A26DF6F730010DFF7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2730EB7A26DE80B5000FABBB /* PBXTargetDependency */,
+				27B2979226DF6F730010DFF7 /* PBXTargetDependency */,
 			);
-			name = "Tests iOS";
-			productName = "Tests iOS";
-			productReference = 2730EB7826DE80B5000FABBB /* Tests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = CommandManagerTests;
+			productName = CommandManagerTests;
+			productReference = 27B2978C26DF6F730010DFF7 /* CommandManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2730EB8226DE80B5000FABBB /* Tests macOS */ = {
+		27B2979A26DF6FA60010DFF7 /* CommandManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2730EB9B26DE80B5000FABBB /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildConfigurationList = 27B297A426DF6FA60010DFF7 /* Build configuration list for PBXNativeTarget "CommandManager" */;
 			buildPhases = (
-				2730EB7F26DE80B5000FABBB /* Sources */,
-				2730EB8026DE80B5000FABBB /* Frameworks */,
-				2730EB8126DE80B5000FABBB /* Resources */,
+				27B2979626DF6FA60010DFF7 /* Headers */,
+				27B2979726DF6FA60010DFF7 /* Sources */,
+				27B2979826DF6FA60010DFF7 /* Frameworks */,
+				27B2979926DF6FA60010DFF7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2730EB8526DE80B5000FABBB /* PBXTargetDependency */,
 			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = 2730EB8326DE80B5000FABBB /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = CommandManager;
+			productName = CommandManager;
+			productReference = 27B2979B26DF6FA60010DFF7 /* CommandManager.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -239,13 +293,12 @@
 					2730EB6F26DE80B5000FABBB = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					2730EB7726DE80B5000FABBB = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 2730EB6726DE80B5000FABBB;
-					};
-					2730EB8226DE80B5000FABBB = {
+					27B2978B26DF6F730010DFF7 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 2730EB6F26DE80B5000FABBB;
+					};
+					27B2979A26DF6FA60010DFF7 = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
@@ -264,8 +317,8 @@
 			targets = (
 				2730EB6726DE80B5000FABBB /* UndoRedoApp (iOS) */,
 				2730EB6F26DE80B5000FABBB /* UndoRedoApp (macOS) */,
-				2730EB7726DE80B5000FABBB /* Tests iOS */,
-				2730EB8226DE80B5000FABBB /* Tests macOS */,
+				27B2978B26DF6F730010DFF7 /* CommandManagerTests */,
+				27B2979A26DF6FA60010DFF7 /* CommandManager */,
 			);
 		};
 /* End PBXProject section */
@@ -287,14 +340,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2730EB7626DE80B5000FABBB /* Resources */ = {
+		27B2978A26DF6F730010DFF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2730EB8126DE80B5000FABBB /* Resources */ = {
+		27B2979926DF6FA60010DFF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,7 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2730EB8C26DE80B5000FABBB /* ContentView.swift in Sources */,
-				2730EB8A26DE80B5000FABBB /* UndoRedoAppApp.swift in Sources */,
+				2730EB8A26DE80B5000FABBB /* UndoRedoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,38 +371,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				2730EB8D26DE80B5000FABBB /* ContentView.swift in Sources */,
-				2730EB8B26DE80B5000FABBB /* UndoRedoAppApp.swift in Sources */,
+				2730EB8B26DE80B5000FABBB /* UndoRedoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2730EB7426DE80B5000FABBB /* Sources */ = {
+		27B2978826DF6F730010DFF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2730EB7D26DE80B5000FABBB /* Tests_iOS.swift in Sources */,
+				27B2978F26DF6F730010DFF7 /* CommandManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2730EB7F26DE80B5000FABBB /* Sources */ = {
+		27B2979726DF6FA60010DFF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2730EB8826DE80B5000FABBB /* Tests_macOS.swift in Sources */,
+				27B297A826DF6FB00010DFF7 /* Command.swift in Sources */,
+				27B297A926DF6FB00010DFF7 /* CommandManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2730EB7A26DE80B5000FABBB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2730EB6726DE80B5000FABBB /* UndoRedoApp (iOS) */;
-			targetProxy = 2730EB7926DE80B5000FABBB /* PBXContainerItemProxy */;
-		};
-		2730EB8526DE80B5000FABBB /* PBXTargetDependency */ = {
+		27B2979226DF6F730010DFF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2730EB6F26DE80B5000FABBB /* UndoRedoApp (macOS) */;
-			targetProxy = 2730EB8426DE80B5000FABBB /* PBXContainerItemProxy */;
+			targetProxy = 27B2979126DF6F730010DFF7 /* PBXContainerItemProxy */;
+		};
+		27B297A126DF6FA60010DFF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B2979A26DF6FA60010DFF7 /* CommandManager */;
+			targetProxy = 27B297A026DF6FA60010DFF7 /* PBXContainerItemProxy */;
+		};
+		27B297AB26DF70580010DFF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B2979A26DF6FA60010DFF7 /* CommandManager */;
+			targetProxy = 27B297AA26DF70580010DFF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -468,13 +527,14 @@
 		2730EB9326DE80B5000FABBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MQ22R4S7T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,13 +550,14 @@
 		2730EB9426DE80B5000FABBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MQ22R4S7T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,92 +619,108 @@
 			};
 			name = Release;
 		};
-		2730EB9926DE80B5000FABBB /* Debug */ = {
+		27B2979426DF6F730010DFF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5MQ22R4S7T;
-				INFOPLIST_FILE = "Tests iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				INFOPLIST_FILE = CommandManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gerasymenko.Tests-iOS";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.gerasymenko.CommandManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "UndoRedoApp (iOS)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UndoRedoApp.app/Contents/MacOS/UndoRedoApp";
 			};
 			name = Debug;
 		};
-		2730EB9A26DE80B5000FABBB /* Release */ = {
+		27B2979526DF6F730010DFF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5MQ22R4S7T;
-				INFOPLIST_FILE = "Tests iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				INFOPLIST_FILE = CommandManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gerasymenko.Tests-iOS";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.gerasymenko.CommandManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "UndoRedoApp (iOS)";
-				VALIDATE_PRODUCT = YES;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UndoRedoApp.app/Contents/MacOS/UndoRedoApp";
 			};
 			name = Release;
 		};
-		2730EB9C26DE80B5000FABBB /* Debug */ = {
+		27B297A526DF6FA60010DFF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5MQ22R4S7T;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommandManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gerasymenko.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.gerasymenko.CommandManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "UndoRedoApp (macOS)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		2730EB9D26DE80B5000FABBB /* Release */ = {
+		27B297A626DF6FA60010DFF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5MQ22R4S7T;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommandManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gerasymenko.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.gerasymenko.CommandManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "UndoRedoApp (macOS)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -677,20 +754,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2730EB9826DE80B5000FABBB /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+		27B2979326DF6F730010DFF7 /* Build configuration list for PBXNativeTarget "CommandManagerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2730EB9926DE80B5000FABBB /* Debug */,
-				2730EB9A26DE80B5000FABBB /* Release */,
+				27B2979426DF6F730010DFF7 /* Debug */,
+				27B2979526DF6F730010DFF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2730EB9B26DE80B5000FABBB /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+		27B297A426DF6FA60010DFF7 /* Build configuration list for PBXNativeTarget "CommandManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2730EB9C26DE80B5000FABBB /* Debug */,
-				2730EB9D26DE80B5000FABBB /* Release */,
+				27B297A526DF6FA60010DFF7 /* Debug */,
+				27B297A626DF6FA60010DFF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
