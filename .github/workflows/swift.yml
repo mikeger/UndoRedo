@@ -1,0 +1,17 @@
+name: Swift
+
+on:
+  push:
+    branches: [ "mikeger/initial-version" ]
+  pull_request:
+    branches: [ "mikeger/initial-version" ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
