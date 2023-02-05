@@ -3,7 +3,7 @@ name: Swift
 on:
   pull_request:
     types: [opened, reopened]
-  push
+  push:
 
 jobs:
   build:
