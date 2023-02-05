@@ -1,10 +1,9 @@
 name: Swift
 
 on:
-  push:
-    branches: [ "mikeger/initial-version" ]
   pull_request:
-    branches: [ "mikeger/initial-version" ]
+    types: [opened, reopened]
+  push
 
 jobs:
   build:
@@ -12,6 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: swift build -v
+      run: xcodebuild -project UndoRedoApp.xcodeproj -scheme "UndoRedoApp (macOS)"
     - name: Run tests
-      run: swift test -v
+      run: xcodebuild -project UndoRedoApp.xcodeproj -scheme "UndoRedoApp (macOS)" test
